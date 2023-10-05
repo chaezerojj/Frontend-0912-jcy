@@ -1,0 +1,9 @@
+/* 클래스가 notice인 <p>태그  */
+p.notice {
+  color: purple;
+}
+
+p {
+  font-style: italic;
+}
+
