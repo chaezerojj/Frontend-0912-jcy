@@ -1,0 +1,47 @@
+h1 {
+  color: blue;
+  font-size: 36px;
+  font-style: arial;
+  text-align: center;
+  text-shadow: grey 2px 2px 3px;
+}
+
+h2 {
+  color: green;
+  font-size: 28px;
+  font-style: georgia;
+  text-align: left;
+  text-decoration: underline;
+}
+
+p {
+  color: black;
+  font-size: 18px;
+  font-style: TimesNewRoman;
+  line-height: 1.6;
+
+  letter-spacing: 1.2px;
+  word-spacing: 2.4px;
+}
+
+ul {
+  color: brown;
+  font-size: 16px;
+  font-style: Verdana;
+
+}
+
+ul li {
+  margin: 8px;
+  text-transform: capitalize;
+}
+
+a {
+  color: purple;
+  
+  text-decoration: none;
+  font-size: 16px;
+  word-spacing: 0.8px;
+  font-style: Arial;
+  text-shadow: black 1px 1px 2px;
+}
