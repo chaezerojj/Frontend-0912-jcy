@@ -13,3 +13,6 @@ ctrl + space
 
 줄 복사 단축키
 alt + shift + 위아래 단축키
+
+요소 줄 정렬 단축키
+ctrl + k + f 
