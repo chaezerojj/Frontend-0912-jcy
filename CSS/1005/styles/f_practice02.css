@@ -1,9 +1,24 @@
+p {
+  color: blue;
+}
+
+#important {
+  color: red;
+}
+
+.notice {
+  font-weight: bolder;
+}
+
+li {
+  color: green;
+}
+
+h2 {
+  font-style: italic;
+}
+
 /* 클래스가 notice인 <p>태그  */
 p.notice {
   color: purple;
 }
-
-p {
-  font-style: italic;
-}
-
