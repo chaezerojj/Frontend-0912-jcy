@@ -1,0 +1,20 @@
+caption {
+  caption-side: bottom;
+}
+
+table {
+  border: 2px dashed green;
+  /* border-spacing: 10px 20px; */
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 2px dotted purple;
+  
+}
+
+/* 표준 테이블 속성 */
+/* table {
+  border: 1px solid black;
+  border-collapse: collapse;
+} */
