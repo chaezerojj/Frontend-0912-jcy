@@ -4,8 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Border</title>
+  <link rel="stylesheet" href="styles/c_Border.css">
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      margin: 15px;
+      text-align: center;
+      font-size: 10px;
+      line-height: 100px;
+      border-width: 5px;
+
+    }
+    #box1 {border-style: solid;}
+    #box2 {border-style: dotted;}
+    #box3 {border-style: dashed;}
+    #box4 {border-style: double;}
+    #box5 {border-style: groove;}
+    #box6 {border-style: inset;}
+    #box7 {border-style: outset;}
+    #box8 {border-style: ridge;}
+  </style>
 </head>
-<link rel="stylesheet" href="styles/c_Border.css">
 <body>
   <!-- 
     ! 박스 모델의 방향
@@ -76,9 +97,9 @@
         border-위치-radius 가로반지름 세로반지름;
     -->
     <hr />
-    <div class="radius round 1"></div>
-    <div class="radius round 2"></div>
-    <div class="radius round 3"></div>
-    <div class="radius round 4"></div>
+    <div class="radius round1" ></div>
+    <div class="radius round2" ></div>
+    <div class="radius round3" ></div>
+    <div class="radius round4" ></div>
 </body>
 </html>

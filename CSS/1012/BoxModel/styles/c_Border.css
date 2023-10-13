@@ -50,9 +50,27 @@
 }
 
 /* 네 군데 꼭짓점을 똑같은 크기로 라운딩 */
+
 /* 첫번째 네모: 
 가로 50px 세로 30px */
+
 /* 두번째 네모: 
 왼쪽 위 꼭짓점을 가로 50px 세로 30px 크기로 라운딩 */
 /* 세번째 네모: 
 값이 하나뿐이면 왼쪽 아래 꼭짓점을 30px 크기로 라운딩 */
+
+.round1 {
+  border-radius: 100%;
+}
+
+.round2 {
+  border-radius: 50px 30px;
+}
+
+.round3 {
+  border-top-left-radius: 50px 30px;
+}
+
+.round4 {
+  border-bottom-left-radius: 30px;
+}
