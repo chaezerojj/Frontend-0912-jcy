@@ -7,6 +7,112 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+    <!--  
+    !헤더
+
+    웹사이트의 헤더에 "Welcome to My Website"라는 제목을 가운데 정렬로 표시하세요.
+
+    !네비게이션 바
+
+    네비게이션 바를 만들고, "Section 1"과 "Section 2"로 이동하는 링크를 리스트 형태로 제공하세요.
+    
+    !메인 컨텐츠
+
+    두 개의 섹션(Section 1, Section 2)을 포함하는 메인 컨텐츠 영역을 생성하세요.
+    "Section 1"에는 헤더 및 표를 포함하세요. 표에는 두 개의 헤더("Header 1" 및 "Header 2")와 두 개의 데이터 셀("Data 1" 및 "Data 2")이 있어야 합니다.
+    "Section 1"에는 이미지를 하나 포함하고, 이 이미지는 #(새로고침) 링크되어야 합니다. 이미지 소스는 임의지정하세요.
+    "Section 2"에는 제목 및 로컬로 저장된 이미지를 포함하세요. 이미지의 파일 경로는 "./image.jpg"를 사용하세요.
+    폼
+
+    개인 정보를 입력하는 폼을 만드세요. 이 폼은 다음 필드를 포함해야 합니다:
+    "Name": 텍스트 입력 필드로서, 필수입력이며 페이지 로딩 시 자동 포커스 되어야 합니다.
+    "Password": 비밀번호 입력 필드로서, 필수입력이어야 합니다.
+    "Email": 이메일 입력 필드입니다.
+    "Do you like this form?": "Yes" 또는 "No" 라디오 버튼 옵션입니다.
+    "Comments": 텍스트 영역 필드입니다.
+    "Submit": 폼을 제출하는 버튼입니다.
+    사용자가 폼을 다시 방문할 때 이전에 입력했던 데이터를 자동으로 채울 수 있도록 설정하세요.
+    모든 입력 필드는 "Personal Information"이라는 제목을 가진 필드셋 내에 있어야 합니다.
+  -->
+
+  <!-- 헤더 -->
+  <div>
+    <div class="web_header">
+      <h2>Welcome to My Website</h2>
+    </div>
+  </div>
+
+  <!-- 네비 바 -->
+  <div>
+    <nav class="nav_bar">
+      <ul class="nav_bar_ul">
+        <li><a href="#">Section 1</a></li>
+        <li><a href="#">Section 2</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- 메인 콘텐츠 -->
+  <!-- section 1 -->
+  <div class="section_wrapper">
+    <div class="section1_wrapper">
+      <h2>Section 1</h2>
+      <table class="sec_table">
+        <tr>
+          <td><strong>Header 1</strong></td>
+          <td><strong>Header 2</strong></td>
+        </tr>
+        
+        <tr>
+          <td>Data 1</td>
+          <td>Data 2</td>
+        </tr>
+      </table>
+      <a href="#"><img src="../../../diff-directory.jpg" alt="sec1_img" width="100px" /></a>
+    </div>
+  </div>
+
+  <!-- section 2 -->
+  <div>
+    <div class="section2_wrapper">
+      <h2>Section 2</h2>
+      <img src="../../../diff-directory.jpg" alt="" width="100px">
+      Example Image
+    </div>
+  </div>
+  <br />
+
+  <!-- Form -->
+  <form class="form_wrapper">
+    <fieldset>
+      <legend class="info">Personal Information</legend>
+            <!-- Name -->
+            <label for="name">Name:</label> <br />
+            <input type="name" id="name"> 
+            <br />
+            <!-- Password -->
+            <label for="password">Password:</label> <br />
+            <input type="password" id="password">
+            <br />
+            <!-- Email -->
+            <label for="email">Email:</label> <br />
+            <input type="email" id="email">
+            <br /> 
+            <!-- form radio -->
+            <p>Do you like this Form?</p>
+            <label for="form_yes">Yes</label>
+            <input type="radio" name="form" id="form_yes">
+            <label for="form_no">No</label>
+            <input type="radio" name="form" id="form_no">
+            <br />
+            <!-- comment -->
+            <label for="comments">Comments</label>
+            <textarea class="comments"></textarea>
+            <br />
+            <div>
+              <button type="submit">Submit</button>
+            </div>
+    </fieldset>
+  </form>
 </body>
 </html>
