@@ -47,10 +47,10 @@
   -->
   <div>
     <button id="self">button01</button>
-    <button>button02</button>
-    <button>button03</button>
-    <button>button04</button>
-    <button>button05</button>
+    <button id="btn2">button02</button>
+    <button id="btn3">button03</button>
+    <button id="btn4">button04</button>
+    <button id="btn5">button05</button>
   </div>
 
   <hr />
@@ -60,14 +60,21 @@
     align-content (수직 축 라인을 기준으로 두 줄 이상 일 때만 정렬)
     : 두 줄부터 사용하는데 의미
     : 두줄의 flex-wrap: wrap;인 상태에서 사용
+
+    ! order
+      : flex item 순서를 정하는 속성
+        ? 기본값으로 모든 flex item들은 order 값이 0
+        ? 순위값이 높은 flex item들은 디스플레이 순서상 순위값이 낮은 항목들보다 나중에 나타남.
+        ? 순위값이 동일한 항목일 경우: 소스코드 순서대로 나열
+        ? 
   -->
-  <div class="container">
+  <!-- <div class="container">
     <div class="item">1</div>
     <div class="item">2</div>
     <div class="item">3</div>
     <div class="item">4</div>
     <div class="item">5</div>
     <div class="item">6</div>
-  </div>
+  </div> -->
 </body>
 </html>
