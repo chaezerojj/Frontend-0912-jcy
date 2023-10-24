@@ -1,0 +1,196 @@
+/* fonts */
+@font-face {
+  font-family: NanumGothic;
+  font-style: bold;
+  src: url(../fonts/NanumGothic.woff)
+  url(../fonts/NanumGothicBold.woff)
+  url(../fonts/NanumGothicExtraBold.woff)
+  url(../fonts/NanumGothicLight.woff)
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'NanumGothic';
+  font-weight: 600;
+}
+
+/* 헤더 */
+.header {
+  background-color: #0E182D;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+  font-size: 14px;
+  font-family: 'NanumGothic';
+  text-decoration-line: none;
+}
+
+.header_wrapper {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.header_ul_1  li {
+  margin: 40px;
+  width: 140px;
+  display: inline-block;
+  align-items: flex-start;
+}
+.header_ul_2  li {
+  margin: 40px;
+  width: 140px;
+  display: inline-block;
+  align-items: flex-end;
+}
+.header_ul_1  li  a {
+  text-decoration-line: none;
+  color: #fff;
+}
+.header_ul_2  li  a {
+  text-decoration-line: none;
+  color: #fff;
+}
+.login {
+  background-color: rgb(89, 85, 130);
+  height: 50px;
+}
+.reservation_dis {
+  background-color: rgb(89, 85, 130);
+  height: 50px;
+}
+.search {
+  background-color: red;
+  height: 50px;
+}
+
+/* 네비 메뉴바 */
+.navi_main {
+  background-color: #384160d2;
+  width: 100%;
+  padding: 1px;
+  text-align: center;
+  font-size: 23px;
+  font-family: 'NanumGothic';
+}
+
+.navi_wrapper > li {
+  margin: 30px;
+  display: inline;
+}
+
+.navi_wrapper > li > a {
+  color: #fff;
+  text-decoration-line: none;
+}
+
+/* 메인 이미지 */
+.main_visual_img {
+  display: flex;
+  justify-content: center;
+}
+
+/* ---  콘텐츠 문단  --- */
+.main_contents {
+  display: flex;
+  width: 2000px;
+  align-items: center;
+  overflow: hidden; 
+  font-family: 'NanumGothic';
+  margin-top: -250px;
+  padding: 10px;
+}
+/* 콘텐츠 왼쪽 문단 */
+.con_left {
+  flex: 1 200px;
+  flex-flow: column;
+  text-align: center;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid rgb(222, 222, 222);
+}
+.schedule > p {
+  font-size: 15px;
+}
+
+.score {
+  font-size: 40px;
+}
+.sporki {
+  margin-top: 10px;
+  width: 300px;
+}
+
+/* 콘텐츠 중앙 문단 */
+.con_center {
+  flex: 2 200px;
+  flex-flow: column;
+  text-align: center;
+  width: 300px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid rgb(220, 220, 220);
+}
+.photo {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+/* 콘텐츠 오른쪽 문단 */
+.con_right {
+  /* display: flex;
+  align-items: center; */
+  flex: 3 200px;
+  flex-flow: column;
+  text-align: center;
+  width: 300px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid rgb(220, 220, 220);
+}
+
+.giants_news > li {
+  display: inline;
+  position: relative;
+}
+
+.giants_news a {
+  position: relative;
+  font-size: 9px;
+}
+
+.ticket_go {
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 200px;
+  height: 130px;
+  flex: 3 200px;
+}
+
+
+/* 병원 */
+.hospital div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  width: 200px;
+  height: 30px;
+}
+
+/* footer */
+.footer_list > li {
+  display: inline;
+}
+
+.footer {
+  font-family: 'NanumGothic';
+  text-align: center;
+}

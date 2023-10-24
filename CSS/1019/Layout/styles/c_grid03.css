@@ -21,6 +21,7 @@ aside {
   border-right: 1px solid #999999;
 }
 
+
 /* 라인 기반 12열 그리드 배치 */
 header {
   grid-column: 1 / 13;
