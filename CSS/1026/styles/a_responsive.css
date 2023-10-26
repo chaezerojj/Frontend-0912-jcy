@@ -1,0 +1,11 @@
+/* @media screen and (max-width: 800px) and (max-height:500px) and (orientation: landscape) {
+  body {
+    background-color: aquamarine;
+  }
+} */
+
+@media (hover: hover){
+  body {
+    background-color: rebeccapurple;
+  }
+}

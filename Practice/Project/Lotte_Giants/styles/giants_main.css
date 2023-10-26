@@ -57,11 +57,11 @@ body {
   color: #fff;
 }
 .login {
-  background-color: rgb(89, 85, 130);
+  background-color: rgb(89, 85, 130, 0.5);
   height: 50px;
 }
 .reservation_dis {
-  background-color: rgb(89, 85, 130);
+  background-color: rgb(89, 85, 130, 0.5);
   height: 50px;
 }
 .search {
