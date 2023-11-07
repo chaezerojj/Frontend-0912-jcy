@@ -1,0 +1,47 @@
+
+/* fonts */
+@font-face {
+  font-family: NanumGothic;
+  font-style: bold;
+  src: url(../fonts/NanumGothic.woff)
+  url(../fonts/NanumGothicBold.woff)
+  url(../fonts/NanumGothicExtraBold.woff)
+  url(../fonts/NanumGothicLight.woff)
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'NanumGothic';
+  font-weight: 600;
+}
+
+.header1 {
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  display: flex;
+  text-align: justify;
+  justify-content: center;
+
+}
+
+.header1-left-ul {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header1-right-ul {
+  display: flex;
+  align-items: flex-end;
+}
+
+.header1-left-ul li a {
+  text-decoration-line: none;
+}
+
+.header1-right-ul li a {
+  text-decoration-line: none;
+}

@@ -149,8 +149,7 @@
   position: relative;
   display: table-cell;
   padding-right: 30px;
-  /*  */
-  width: 100%;
+  width: -webkit-fill-available;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -265,9 +264,7 @@
   background-color: #dadada;
 }
 
-
 /* banner 영역 스타일링 */
-
 .banner-wrapper {
   width: 460px;
   height: 147px;
