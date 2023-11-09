@@ -10,8 +10,6 @@ console.log(PI * r * r);
 
 // 문제2
 
-let inch;
-let cm;
-inch =
-inch = prompt('숫자를 입력하세요.');
-
+let inch = prompt('숫자를 입력하세요.');
+let centimeters = inches * 2.54;
+alert('${inches}inch는 ${centimeters}cm입니다.}')
