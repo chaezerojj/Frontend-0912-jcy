@@ -45,16 +45,16 @@ function updateUser(id: number, changes: Partial<User>) {
 updateUser(2, {name: 'ldk'});
 console.log(users[2]);
 
-//? Readonly: 모든 속성을 읽기 전용 속성으로 ㅁ나들어줌
+//? Readonly: 모든 속성을 읽기 전용 속성으로 만들어줌
 interface ReadUser {
   readonly name: string;
   readonly age: number;
 }
 
-let user: Readonly<User> = {
-  name = 'LSA',
-  age = 20
-};
+// let user: readonly<User> = {
+//   name = 'LSA',
+//   age = 20
+// };
 // user.name 읽기전용 속성이므로 'name'에 할당할 수 없습니다.
 
 
