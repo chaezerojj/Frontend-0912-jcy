@@ -3,6 +3,7 @@
   margin: 0;
 }
 
+/* 전체 컨테이너 설정 */
 #total-container {
   width: 80%;
   height: 80%;
@@ -74,7 +75,7 @@
   border-radius: 10px;
 }
 
-.img {
+img {
   width: 100%;
   height: 100%;
 }
