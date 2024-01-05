@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from 'react'
+import React, { useReducer } from 'react'
 
 //! useReducer
 // : 컴포넌트 내의 상태 관리 기능
