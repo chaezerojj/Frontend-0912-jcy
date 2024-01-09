@@ -1,6 +1,6 @@
 import React from 'react'
-import Axios01 from './a_axios/Axios01'
-import Axios02 from './a_axios/Axios02'
+// import Axios01 from './a_axios/Axios01'
+// import Axios02 from './a_axios/Axios02'
 import Axios03 from './a_axios/Axios03'
 
 export default function Index() {
