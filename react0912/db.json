@@ -1,7 +1,61 @@
 {
   "users": [
-    { "id": 1, "username": "qwe123", "email": "qwe123@naver.com"},
-    { "id": 2, "username": "qwe456", "email": "qwe456@naver.com"}
-    
+    {
+      "id": 1,
+      "username": "aaa",
+      "email": "aaa@naver.com"
+    },
+    {
+      "id": 2,
+      "username": "bbb",
+      "email": "bbb@naver.com"
+    },
+    {
+      "id": 3,
+      "username": "ccc",
+      "email": "ccc@naver.com"
+    },
+    {
+      "id": 4,
+      "username": "ddd",
+      "email": "ddd@naver.com"
+    },
+    {
+      "id": 5,
+      "username": "eee",
+      "email": "eee@naver.com"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "a",
+      "content": "aa"
+    },
+    {
+      "id": 2,
+      "title": "b",
+      "content": "bb"
+    },
+    {
+      "id": 3,
+      "title": "c",
+      "content": "cc"
+    },
+    {
+      "id": 4,
+      "title": "d",
+      "content": "dd"
+    },
+    {
+      "id": 5,
+      "title": "e",
+      "content": "ee"
+    },
+    {
+      "id": 6,
+      "title": "f",
+      "content": "ff"
+    }
   ]
 }
