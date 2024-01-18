@@ -73,6 +73,7 @@ import User from "./pages/user";
 
 import BookList from './pages/BookList'
 import BookDetail from './pages/BookDetail'
+import Login from "./pages/cookie/Login";
 
 
 function App() {
@@ -112,6 +113,7 @@ function App() {
         {/* 책 목록 > 상세페이지 컴포넌트 */}
         <Route path="/book" element={<BookList />}></Route>
         <Route path="/book/:bookId" element={<BookDetail />}></Route>
+        <Route path="/login" element={<Login />}></Route>
       </Routes>
 
       {/* a화면 - 로그인, 회원가입 */}
