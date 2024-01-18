@@ -9,7 +9,8 @@ export default function Index() {
 
   useEffect(() => {
     fetchBooks();
-  }, [fetchBooks])
+  }, [fetchBooks]);
+
   return (
     <div>
       <h2>Book List</h2>
@@ -17,7 +18,8 @@ export default function Index() {
         {books.map(book => (
           <li key={book.id}>
             <Link to={`/book/${book.id}`}>
-              {book.title}</Link>
+              {book.title}
+              </Link>
           </li>
         ))}
       </ul>

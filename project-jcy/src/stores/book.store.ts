@@ -21,4 +21,5 @@ export const useBookState = create<BookState>((set) => ({
     const response = await axios.get('http://localhost:5000/books');
     // 상태 업데이트
     set({books: response.data});
-}}))
+  }
+}))
