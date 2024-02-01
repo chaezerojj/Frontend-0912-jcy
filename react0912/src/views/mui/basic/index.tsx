@@ -1,5 +1,5 @@
 import { Box, Button, Typography, createTheme } from '@mui/material'
-import React from 'react'
+import React from 'react';
 
 //! MUI 기본 사용법
 // npm을 사용하여 설치
@@ -12,6 +12,7 @@ import React from 'react'
 // createTheme 함수를 사용하여 사용자 정의 테마 생성
 // ThemeProvider 컴포넌트를 사용하여 메인 컴포넌트에게 전달
 // : App 컴포넌트
+
 
 export const theme = createTheme({
   palette: {
