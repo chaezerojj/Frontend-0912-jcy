@@ -1,15 +1,32 @@
-import { Button, Card, CardContent, CardMedia, TextField, Typography } from '@mui/material'
-import React from 'react'
+import { Button, Card, CardContent, CardMedia, TextField, Typography, IconButton, Paper, Box } from '@mui/material'
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
-export default function index() {
+import React, { useState } from 'react'
+
+const images = [
+  'https://cdn.pixabay.com/photo/2017/09/25/13/12/puppy-2785074_1280.jpg'
+];
+
+export default function Index() {
+  const [activeStep, setActiveStep] = useState(0);
+  const maxSteps = images.length;
+
+  const handleNext = () => {
+    setActiveStep((prevActiveStep) => (prevActiveStep + 1) % maxSteps);
+  };
+
+  const handleBack = () => {
+    setActiveStep((prevActiveStep) => (prevActiveStep - 1 + maxSteps) % maxSteps);
+  };
   return (
     <>
-    <hr />
+      <hr />
       {/* 기본 버튼 */}
       <Button variant='contained'>
         Default
       </Button>
-      {/* 색상 변경 버튼 */}
+      {/* 색상 변경 버튼*/}
       <Button variant='contained' color='primary'>
         Default
       </Button>
@@ -22,10 +39,10 @@ export default function index() {
         Link
       </Button>
       <hr />
-      {/*
-      텍스트 필드
-      : 사용자로부터 입력을 받기 위한 요소
-      */}
+      {/* 
+        텍스트 필드
+        : 사용자로부터 입력을 받기 위한 요소
+       */}
       <TextField 
         label="Standard"
         variant='standard'
@@ -39,32 +56,54 @@ export default function index() {
       <TextField 
         label="Password"
         type='password'
-        variant='standard'
       />
 
       {/* 카드: 정보를 보여주는 컨테이너 */}
       <Card variant='outlined'>
-        <CardMedia
+        <CardMedia 
           component='img'
           height='140'
-          image="C:\frontend-0912-jcy\react0912\src\assets\images\puppy-1.jpg"
+          image=''
           alt='카드 이미지'
-        /> 
+        />
         <CardContent>
-          <Typography
-          variant='h5'
-          component='h2'>
-            Card Title
-          </Typography>
-          <Typography
-          variant='body2'
-          component='p'>
-            Card Content
-          </Typography>
+          <Typography variant='h5' component='h2'>Card Title</Typography>
+          <Typography variant='body2' component='p'>Card content</Typography>
         </CardContent>
       </Card>
       <>
-      
+      <Paper
+        square
+        elevation={0}
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          height: 50,
+          pl: 2,
+          bgcolor: 'background.default',
+        }}
+      >
+        <IconButton onClick={handleBack} disabled={activeStep === 0}>
+          <ArrowBackIosIcon />
+        </IconButton>
+        <Box
+          component="img"
+          sx={{
+            height: 255,
+            maxWidth: 400,
+            overflow: 'hidden',
+            width: '100%',
+          }}
+          src={images[activeStep]}
+          alt={`Image ${activeStep}`}
+        />
+        <IconButton
+          onClick={handleNext}
+          disabled={activeStep === maxSteps - 1}
+        >
+          <ArrowForwardIosIcon />
+        </IconButton>
+      </Paper>
       </>
     </>
   )

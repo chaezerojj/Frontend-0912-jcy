@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Link, Route, Routes } from "react-router-dom";
+import UseNavigate from './pages/useNavigate';
 
 // React-Router-Dom
 // : React 앱에서 클라이언트 사이드 라우팅을 구현하기 위한 라이브러리
@@ -74,6 +75,7 @@ import User from "./pages/user";
 import BookList from './pages/BookList'
 import BookDetail from './pages/BookDetail'
 import Login from "./pages/cookie/Login";
+import LoginCallbackPage from "./pages/cookie/LoginCallbackPage";
 
 
 function App() {
@@ -112,8 +114,12 @@ function App() {
 
         {/* 책 목록 > 상세페이지 컴포넌트 */}
         <Route path="/book" element={<BookList />}></Route>
+        {/* 동적 경로에서 책 상세 페이지 표시 */}
         <Route path="/book/:bookId" element={<BookDetail />}></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="/useNavigate" element={<UseNavigate />}></Route>
+
+        <Route path="/login/callback" element={<LoginCallbackPage />}></Route>
       </Routes>
 
       {/* a화면 - 로그인, 회원가입 */}
